@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/YuriyMorkovnik-tic-tac-toe/static/css/main.ff0ec109.chunk.css",
+    "main.js": "/YuriyMorkovnik-tic-tac-toe/static/js/main.038b4163.chunk.js",
+    "main.js.map": "/YuriyMorkovnik-tic-tac-toe/static/js/main.038b4163.chunk.js.map",
+    "runtime-main.js": "/YuriyMorkovnik-tic-tac-toe/static/js/runtime-main.daa71bdd.js",
+    "runtime-main.js.map": "/YuriyMorkovnik-tic-tac-toe/static/js/runtime-main.daa71bdd.js.map",
+    "static/js/2.1061c4bb.chunk.js": "/YuriyMorkovnik-tic-tac-toe/static/js/2.1061c4bb.chunk.js",
+    "static/js/2.1061c4bb.chunk.js.map": "/YuriyMorkovnik-tic-tac-toe/static/js/2.1061c4bb.chunk.js.map",
+    "index.html": "/YuriyMorkovnik-tic-tac-toe/index.html",
+    "precache-manifest.f7515643260eccf86edcadc9c4de6e5a.js": "/YuriyMorkovnik-tic-tac-toe/precache-manifest.f7515643260eccf86edcadc9c4de6e5a.js",
+    "service-worker.js": "/YuriyMorkovnik-tic-tac-toe/service-worker.js",
+    "static/css/main.ff0ec109.chunk.css.map": "/YuriyMorkovnik-tic-tac-toe/static/css/main.ff0ec109.chunk.css.map",
+    "static/js/2.1061c4bb.chunk.js.LICENSE.txt": "/YuriyMorkovnik-tic-tac-toe/static/js/2.1061c4bb.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.daa71bdd.js",
+    "static/js/2.1061c4bb.chunk.js",
+    "static/css/main.ff0ec109.chunk.css",
+    "static/js/main.038b4163.chunk.js"
+  ]
+}
