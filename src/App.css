@@ -1,38 +1,144 @@
 .App {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-grow: 1;
+  flex-direction: column;
+  height: 100vh;
 }
 
-.App-link {
-  color: #61dafb;
+.table-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  width: 60vh;
+  height: 60vh;
+  position: relative;
+
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.cell-wrapper {
+  width: 20vh;
+  height: 20vh;
+  border: 3px black solid;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cell {
+  transition: all 0.2s ;
+  height: 10%;
+}
+
+.cell-nought, .cell-cross {
+  width: 15vh;
+  height: 15vh;
+  color: palevioletred;
+  position: relative;
+}
+.cell-cross::before, .cell-cross::after {
+  content: " ";
+  width: 20px;
+  height: 100%;
+  background-color: black;
+  position: absolute;
+  right: 6vh;
+}
+.cell-cross::before {
+  transform: rotate(45deg);
+}
+.cell-cross::after {
+  transform: rotate(-45deg);
+}
+
+.cell-nought::before {
+  content: " ";
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  border: 20px black solid;
+  position: absolute;
+  right: 0;
+  box-sizing: border-box;
+}
+
+.cell-wrapper:nth-child(3n+1) {
+  border-left: 0px;
+}
+
+.cell-wrapper:nth-child(3n+0) {
+  border-right: 0px;
+}
+.cell-wrapper:nth-child(1),
+.cell-wrapper:nth-child(2),
+.cell-wrapper:nth-child(3) {
+  border-top: 0px;
+}
+.cell-wrapper:nth-child(7),
+.cell-wrapper:nth-child(8),
+.cell-wrapper:nth-child(9) {
+  border-bottom: 0px;
+}
+
+.restart-button {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  background-color: white;
+  padding: 2vh;
+  width: 16vh;
+  border: 2vh black dashed;
+  font-size: x-large;
+  font-weight: bold;
+  cursor: pointer;
+  top: -50%;
+  transition: top .5s ;
+}
+.restart-button--shown {
+  top: 8%;
+}
+
+.win-line {
+  transition: width .5s ;
+  width: 0%;
+}
+
+.win-line--shown {
+  border-bottom: 2vh red dashed;
+  position: absolute;
+  width: 100%;
+}
+.win-line--hor-top {
+  top: 9vh;
+}
+.win-line--hor-mid {
+  top: 29vh;
+}
+.win-line--hor-low {
+  top: 49vh;
+}
+.win-line--diag-pos {
+  top: 29vh;
+  transform: rotate(-45deg);
+}
+.win-line--diag-neg {
+  top: 29vh;
+  transform: rotate(45deg);
+}
+
+.win-line--vert-mid {
+  top: 29vh;
+  transform: rotate(90deg);
+}
+.win-line--vert-left {
+  top: 29vh;
+  transform: rotate(90deg);
+  left: -20vh;
+}
+.win-line--vert-right {
+  top: 29vh;
+  transform: rotate(90deg);
+  left: 20vh;
 }
